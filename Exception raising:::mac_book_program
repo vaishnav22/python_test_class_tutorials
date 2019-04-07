@@ -1,0 +1,74 @@
+Exception raising
+
+# custom input
+num = int(input())
+
+# raise exception if input is negative
+if num < 0:
+    raise Exception('{} is negative, please enter a positive number'.format(num))
+
+# print input number if it is not negative
+print('Your number is accepted!’)
+
+
+Output
+---------------------------------------------------------------------------
+Exception                                 Traceback (most recent call last)
+<ipython-input-5-9029052661ca> in <module>()
+      4 # raise exception if input is negative
+      5 if num < 0:
+----> 6     raise Exception('{} is negative, please enter a positive number'.format(num))
+      7 
+      8 # print input number if it is not negative
+
+Exception: -10 is negative, please enter a positive number
+
+__________________________________________________________
+
+
+
+Example for try and except ::::
+
+
+# take input
+num1, num2 = 5, 0
+
+# Code starts here
+
+
+try:
+    quotient  = num1/num2
+    message  = "quotient is "+ " "+str(quotient)
+    print(message)
+# try except block
+except ZeroDivisionError:
+    message = 'cannot divide by zero'
+    print(message)
+
+
+__________________________________________________________
+
+try:
+    a = 0 / 1
+    message = "Quotient is" + ' ' + str(a)
+    print(message)
+except ZeroDivisionError:
+    message = "Cannot divide zero"
+    print(message)
+
+__________________________________________________________
+
+def mean(n):
+    
+    sum = 0
+    for i in range(0,n):
+        sum+=i
+    total= sum/n
+    return total
+
+val = mean(4)
+print(val)
+
+_________________________________________________________
+
+
