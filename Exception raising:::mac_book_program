@@ -71,4 +71,21 @@ print(val)
 
 _________________________________________________________
 
+# Code starts here
 
+# lambda function to calculate square
+square = lambda x : x**2
+square_1 = square(5)
+#print(square_1)
+# natural numbers list
+nums = [1,2,3,4,5,6,7,8,9,10]
+
+# empty list
+square_nums = []
+# loop through every element in list
+for x in nums:
+    square_1 = square(x)
+    square_nums.append(square_1)
+print(square_nums)
+# display new list
+________________________________________________________
