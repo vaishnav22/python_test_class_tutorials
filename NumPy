@@ -1,0 +1,62 @@
+Attributes of NumPy arrays
+Now that you know how to create a NumPy array, let us look at the most essential features of one and discuss them in details. We will be taking two arrays to illustrate the features
+
+a = np.array([1,2,3,4])
+b = np.array([[1,2,3,4], [5,6,7,8]])
+The attributes of both the arrays a and b are discussed below:
+
+Shape
+
+It returns a tuple consisting of array dimensions i.e. tells us how many items are present in each dimension and can be found using the .shape attribute of the ndarray object.
+
+print('The shape of the array a is ', a.shape)
+print('The shape of the array b is ', b.shape)
+Output
+
+'The shape of the array a is (4,)'
+'The shape of the array b is (2,4)'
+Note that the 1-D array a has shape of (4, ) and not (4, 1)
+
+Dimensions
+
+It gives the number of dimensions and can be found using the .ndim attribute of ndarray object.
+
+print('The dimensions of array a is ', a.ndim)
+print('The dimensions of array b is ', b.ndim)
+Output
+
+'The dimensions of array a is 1'
+'The dimensions of array b is 2'
+Size
+
+It tells the total number of items in the array as a whole. More precisely it is the product of the elements of the .shape attribute of the array.
+
+print('The size of the array a is ', a.size)
+print('The size of the array b is ', b.size)
+Output
+
+'The shape of the array a is 4'
+'The shape of the array b is 8'
+Datatype
+
+As the name suggests, it informs about the type of data in the array. Since a NumPy array consists of homogeneous data only, you will get only a single dtype.
+
+print('The datatype of the array a is ', a.dtype)
+print('The datatype of the array b is ', b.dtype)
+Output
+
+'The datatype of the array a is int64'
+'The datatype of the array b is int64'
+NumPy offers support to a much greater variety of numerical types than base Python does like int8, int16, float32, float16, bool_, complex_ etc.
+
+Itemsize
+
+It represents the number of bytes in each element of the array.
+
+print('The number of bytes in each element of the array a is  ', a.itemsize)
+print('The number of bytes in each element of the array b is ', b.itemsize)
+Output
+
+'The number of bytes in each element of the array a is 8'
+'The number of bytes in each element of the array b is 8'
+With the help of the following attributes you can get the necessary information of the NumPy array as a whole along with its elements.
