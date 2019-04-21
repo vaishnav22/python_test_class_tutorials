@@ -60,3 +60,56 @@ Output
 'The number of bytes in each element of the array a is 8'
 'The number of bytes in each element of the array b is 8'
 With the help of the following attributes you can get the necessary information of the NumPy array as a whole along with its elements.
+
+
+_____________________________________________________________________________________________________
+
+Arrays with Existing Data
+New NumPy arrays can also be created from already existing ones. Let us look at some ways of doing so.
+
+np.asarray( )
+
+This command is very similar to the np.array() command. Some examples are:
+
+Converting a list to array
+#python list
+a=[1,2,3]
+#convert to NumPy array
+b=np.asarray(a)
+print(b)
+Output
+
+[1 2 3]
+Converting tuples into array
+#python tuples
+a=((1,2),(3,4))
+
+#convery to NumPy array
+b=np.asarray(a)
+print(b)
+Output
+
+[[1 2]
+ [3 4]]
+np.fromiter( )
+
+This function creates a NumPy ndarray from an iterable. For example:
+
+a=np.fromiter([1,2,3,4],dtype='int8')
+b=np.fromiter((1,2,3,4),dtype='int8')
+c=np.fromiter(range(1,5),dtype='int8')
+d=np.fromiter('string',dtype='S50')
+
+print("Array a is ",a)
+print("Array b is ",b)
+print("Array c is ",c)
+print("Array d is ",d)
+Output
+
+Array a is  [1 2 3 4]
+Array b is  [1 2 3 4]
+Array c is  [1 2 3 4]
+Array d is  [b's' b't' b'r' b'i' b'n' b'g']
+Here we are creating arrays from list a, tuple b, range( ) and finally a string d.
+
+_________________________________________________________________________
