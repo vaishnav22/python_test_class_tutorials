@@ -115,3 +115,48 @@ print(v)
 #b = book('everything is OSM','vaishnav',546)
 #print(b)
 #len(b)
+
+
+######________________________________________________________$$$$$$$$$$$$$$$$$$$$$$$
+
+# Code starts here
+alist = [i for i in range(1,51)]
+# initialize both list
+blist = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
+def numb(n):
+    
+final = [i for i in alist if i not in blist]
+print(final)
+
+%%%%%%%%%%%%________________________________________________________________________
+
+# Code starts
+
+# class for Circle
+class Circle:
+    def __init__(self,radius):
+        self.radius = radius
+        
+    def area(self):
+        area = 3.14*(self.radius**2)
+        return area
+
+    
+    def perimeter(self):
+        perimeter = 2*3.14*self.radius
+        return perimeter
+    
+
+circle = Circle(3)
+circle_area = circle.area()
+print(circle_area)
+
+circle_perimeter = circle.perimeter()
+print(circle_perimeter)
+
+box = Circle(4)
+print(circle.perimeter)
+print(box.perimeter)
+
+######_____________________####################################________________
+
